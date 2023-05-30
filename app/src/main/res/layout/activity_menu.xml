@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#121b22"
+    android:paddingBottom="10dp"
+    tools:context=".Menu">
+<!--    @drawlable/bgmenu #121b22 -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1D2D39"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+<!--#20313E        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/button_dropdown"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:text="Pilih"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            app:iconGravity="textEnd"-->
+<!--            app:iconTint="@color/white"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_ic"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Username"/>
+        <ImageButton
+            android:id="@+id/dropdown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/float_transparent"
+            android:paddingLeft="7dp"
+            android:src="@drawable/ic_drop" />
+    </LinearLayout>
+</RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical">
+<!--android:layout_marginTop="30dp"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/balsamiq_sans_bold"
+        android:text="MENU"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cek Array"-->
+<!--        android:id="@+id/arrcuy"-->
+<!--        android:layout_marginBottom="10dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2C495E"
+        android:onClick="absen"
+        android:layout_marginBottom="30dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="#233440"
+            >
+            <!-- #0339c3           #2F8FF6 #402EF1  #2C3675 #18306e #293791 #18306e-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/book"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="60dp"
+            android:text="ABSEN MASUK"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="30dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2C495E"
+        android:onClick="abs_keluar"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="#233440"
+            >
+            <!--            #2F8FF6 #402EF1  #2C3675 #18306e-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_out"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="60dp"
+            android:text="ABSEN KELUAR"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="30dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2C495E"
+        android:onClick="grafik"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="#233440"
+            >
+            <!--            #2F8FF6 #402EF1  #2C3675 #18306e-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_grafik"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="30dp"
+            android:text="GRAFIK KEHADIRAN"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2C495E"
+        android:onClick="history"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="#233440"
+            >
+            <!--            #2F8FF6 #402EF1  #2C3675 #18306e-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/history_ic"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="HISTORY"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        android:clickable="true"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        app:cardBackgroundColor="#293791"-->
+<!--        android:onClick="abs_keluar"-->
+<!--        >-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            app:cardCornerRadius="0dp"-->
+<!--            app:cardBackgroundColor="#18306e"-->
+<!--            >-->
+<!--            &lt;!&ndash;            #2F8FF6 #402EF1  #2C3675 #18306e&ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/history_ic"-->
+<!--                android:layout_gravity="center"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="right|center_vertical"-->
+<!--            android:layout_marginRight="60dp"-->
+<!--            android:text="ABSEN KELUAR"-->
+<!--            android:textStyle="bold"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:onClick="cuti"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2C495E"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="#233440"
+            >
+<!--            #4B4DEA #402EF1-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/date"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="CUTI"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <ImageView-->
+<!--            android:layout_width="95dp"-->
+<!--            android:layout_height="85dp"-->
+<!--            android:background="@drawable/splash"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/vtax"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="V-Attendance"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#1E6CF4"-->
+<!--            android:textSize="22dp"-->
+<!--            android:layout_gravity="center"/>-->
+<!--    </LinearLayout>-->
+</LinearLayout>
+</ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

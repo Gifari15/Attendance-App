@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121b22"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    tools:context=".EditProfilActivity">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_profile"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:drawableEnd="@drawable/ic_user_w"
+            android:hint="Username"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/etalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:hint="Alamat"
+            android:drawableEnd="@drawable/location_ic_w"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/ethp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="No Handphone"
+            android:drawableEnd="@drawable/ic_phone_w"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:maxLength="13"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="8"
+            android:layout_marginTop="10dp"
+            android:hint="New Password"
+            android:drawableEnd="@drawable/ic_key_w"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            />
+
+    <EditText
+        android:id="@+id/etconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:drawableEnd="@drawable/ic_key_w"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#233440"
+        android:onClick="save"
+        android:layout_marginBottom="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Save"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

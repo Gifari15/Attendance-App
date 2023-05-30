@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="13dp"-->
+<!--        android:clickable="false"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        app:cardBackgroundColor="#016FE1"/>-->
+    <TextView
+        android:id="@+id/titlesearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23dp"
+        android:background="#0E133E"
+        android:text="Change Password"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:drawableEnd="@drawable/ic_user"
+            android:hint="Username"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp" />
+
+        <EditText
+                android:id="@+id/etpwlama"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:maxLength="20"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_lock"
+                android:hint="Current Password"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="11dp"
+                />
+
+
+            <EditText
+                android:id="@+id/etpwbaru"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:maxLength="20"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_lock"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="11dp"
+                />
+
+
+            <EditText
+                android:id="@+id/etpwkon"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:maxLength="20"
+                android:drawableEnd="@drawable/ic_key"
+                android:hint="Confirm Password"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="11dp"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="cancel"/>
+
+        <Button
+            android:id="@+id/btnchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0054FB"
+            android:text="Change"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

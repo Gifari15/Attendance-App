@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121b22"
+    tools:context=".ProfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#121b22"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/ic_profile"
+        android:onClick="editprofil"
+        android:layout_gravity="center_horizontal"
+        />
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvhp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="085676543212"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#101F29">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cuti"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="55dp"
+            />
+        <TextView
+            android:id="@+id/tvcuti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Izin"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tvizin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Sakit"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tvsakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cuti Khusus"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tvcutikhusus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/titlesearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23dp"
+        android:background="#061340"
+        android:text="Detail Cuti"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etkat"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:drawableEnd="@drawable/ic_category"
+            android:hint="Kategori"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/detailmulai"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:hint="Mulai Cuti"
+            android:drawableEnd="@drawable/date_ic"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etakhir"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Akhir Cuti"
+            android:drawableEnd="@drawable/date_ic"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etmasuk"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:layout_marginTop="5dp"
+            android:hint="Masuk Kerja"
+            android:drawableEnd="@drawable/date_ic"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etjmlcuti"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:layout_marginTop="5dp"
+            android:hint="Jumlah Cuti"
+            android:editable="false"
+            android:drawableEnd="@drawable/ic_jml"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etket"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="50"
+            android:drawableEnd="@drawable/ic_book"
+            android:hint="Keterangan"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etstatus"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:layout_marginTop="5dp"
+            android:hint="Status"
+            android:editable="false"
+            android:singleLine="true"
+            android:drawableEnd="@drawable/ic_status"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+        <EditText
+            android:id="@+id/etalasan"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="50"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:singleLine="true"
+            android:drawableEnd="@drawable/ic_book"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="close"/>
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D11D1D"
+            android:text="delete"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

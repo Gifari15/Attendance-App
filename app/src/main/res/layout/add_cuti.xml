@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/titlesearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23dp"
+        android:background="#061340"
+        android:text="Add Cuti"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_kat"
+            android:layout_width="250dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_spinner"/>
+
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:drawableEnd="@drawable/ic_user"
+            android:layout_marginTop="5dp"
+            android:hint="Username"
+            android:enabled="false"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etmulai"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:maxLength="20"
+                        android:layout_marginTop="5dp"
+                        android:editable="false"
+                        android:hint="Mulai Cuti"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textColorHint="#A3A1A1"
+                        android:textSize="11dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/date_ic"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="4dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/float_transparent"
+                        android:id="@+id/btnmulai"
+                        />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etakhir"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:maxLength="20"
+                        android:layout_marginTop="5dp"
+                        android:hint="Akhir Cuti"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:singleLine="true"
+                        android:textColorHint="#A3A1A1"
+                        android:textSize="11dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnakhir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/float_transparent"
+                        android:src="@drawable/date_ic" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etket"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:maxLength="20"
+            android:drawableEnd="@drawable/ic_book"
+            android:hint="Keterangan"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="11dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="cancel"/>
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0054FB"
+            android:text="save"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
